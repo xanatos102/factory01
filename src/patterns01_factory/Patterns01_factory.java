@@ -24,51 +24,36 @@ public class Patterns01_factory {
      */
     public static void main(String[] args) {
         
-        //testSingleClass();
-        //testBronze();
-        //testSilver();
-        //testGold();
-        //testPlatinum();
+        //oneClass();
+        //superAndSubClasses();
         testAccount();
     }
     
-    public static int testPlatinum(){
-        
+    public static int oneClass(){
         System.out.print("Platinum Account: ");
         PlatinumAccount ac1 = new PlatinumAccount();
         ac1.rewardPoints(123.00);
         System.out.println(ac1.getRewardPoints());
-        return 0;
-    }
-    
-    public static int testGold(){
         
         System.out.print("Gold Account: ");
-        GoldAccount ac1 = new GoldAccount();
-        ac1.rewardPoints(123.00);
-        System.out.println(ac1.getRewardPoints());
-        return 0;
-    }
-    
-    public static int testSilver(){
+        GoldAccount ac2 = new GoldAccount();
+        ac2.rewardPoints(123.00);
+        System.out.println(ac2.getRewardPoints());
         
         System.out.print("Silver Account: ");
-        SilverAccount ac1 = new SilverAccount();
-        ac1.rewardPoints(123.00);
-        System.out.println(ac1.getRewardPoints());
-        return 0;
-    }
-    
-    public static int testBronze(){
+        SilverAccount ac3 = new SilverAccount();
+        ac3.rewardPoints(123.00);
+        System.out.println(ac3.getRewardPoints());
         
         System.out.print("Bronze Account: ");
-        BronzeAccount ac1 = new BronzeAccount();
-        ac1.rewardPoints(123.00);
-        System.out.println(ac1.getRewardPoints());
+        BronzeAccount ac4 = new BronzeAccount();
+        ac4.rewardPoints(123.00);
+        System.out.println(ac4.getRewardPoints());
+        
         return 0;
     }
     
-    public static int testSingleClass(){
+    public static int superAndSubClasses(){
         
         System.out.println("-- Account Type Test--");
         System.out.print("Silver Account: ");
